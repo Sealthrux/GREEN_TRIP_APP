@@ -7,15 +7,30 @@
     tools:context=".Pontos_Interesse_Main">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/PontosDeInteresse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="105dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/pontos_de_interesse"
+        android:textColor="#000000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PontosDeInteresse"
+        app:layout_constraintStart_toEndOf="@+id/PontosDeInteresse"
+        app:layout_constraintTop_toTopOf="@+id/PontosDeInteresse"
+        app:srcCompat="@drawable/pontosinteresseexeimg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
