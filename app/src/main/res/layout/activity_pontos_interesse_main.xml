@@ -10,7 +10,7 @@
         android:id="@+id/PontosDeInteresse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="105dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/pontos_de_interesse"
@@ -24,10 +24,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/pontosdeinteresseICON"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="26dp"
         app:layout_constraintBottom_toBottomOf="@+id/PontosDeInteresse"
         app:layout_constraintStart_toEndOf="@+id/PontosDeInteresse"
         app:layout_constraintTop_toTopOf="@+id/PontosDeInteresse"
