@@ -4,22 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pontos_Interesse_Main">
+    android:elevation="4dp"
+    tools:context=".Pontos_Interesse_Main"
+    tools:layout_editor_absoluteX="135dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <TextView
+        android:id="@+id/FiltrosBoxSelector"
+        android:layout_width="344dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/filtrosbox"
+        android:elevation="3dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipCultura"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="332dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/cultura"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/cultura"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipTransporte"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="276dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/transporte"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/transporte"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipDesporto"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="276dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/desporto"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/desporto"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipNatureza"
+        android:layout_width="97dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="211dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/natureza"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/natureza"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipMuseus"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="213dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/museus"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/museus"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
 
     <com.google.android.material.chip.Chip
         android:id="@+id/ChipHoteis"
         android:layout_width="97dp"
         android:layout_height="49dp"
-        android:elevation="2dp"
+        android:layout_marginTop="152dp"
+        android:elevation="4dp"
         android:fontFamily="sans-serif-thin"
         android:text="@string/h_teis"
         android:textSize="14sp"
         android:typeface="normal"
         app:chipIcon="@drawable/hoteis"
         app:chipIconSize="16dp"
-        app:rippleColor="#FFFFFF"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/PontosDeInteresse"
@@ -43,6 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
+        android:contentDescription="@string/PontoIntLogo"
         app:layout_constraintBottom_toBottomOf="@+id/PontosDeInteresse"
         app:layout_constraintStart_toEndOf="@+id/PontosDeInteresse"
         app:layout_constraintTop_toTopOf="@+id/PontosDeInteresse"
@@ -53,13 +165,13 @@
         style="@android:style/Widget.Holo.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/topbargreen"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/todo" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/MyGreenTripTitle"
@@ -83,6 +195,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/homebutton"
         app:layout_constraintBottom_toBottomOf="@+id/TopBarButton"
         app:layout_constraintEnd_toEndOf="@+id/TopBarButton"
         app:layout_constraintTop_toTopOf="parent"
@@ -90,34 +203,23 @@
         app:srcCompat="@drawable/homebutton"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/FiltrosBoxSelector"
-        android:layout_width="350sp"
-        android:layout_height="205sp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/filtrosbox"
-        android:elevation="1dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.chip.Chip
         android:id="@+id/ChipRest"
         android:layout_width="124dp"
         android:layout_height="47dp"
-        android:elevation="2dp"
+        android:layout_marginTop="152dp"
+        android:elevation="4dp"
         android:fontFamily="@font/montserrat_light"
         android:text="@string/restaura_o"
         android:textSize="14sp"
         android:typeface="normal"
         app:chipIcon="@drawable/restauracao"
         app:chipIconSize="16dp"
-        app:rippleColor="#FFFFFF"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

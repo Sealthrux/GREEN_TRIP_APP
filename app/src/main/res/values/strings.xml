@@ -5,4 +5,11 @@
     <string name="my_green_trip">My Green Trip</string>
     <string name="restaura_o">Restauração</string>
     <string name="h_teis">Hóteis</string>
+    <string name="museus">Museus</string>
+    <string name="natureza">Natureza</string>
+    <string name="cultura">Cultura</string>
+    <string name="desporto">Desporto</string>
+    <string name="transporte">Transporte</string>
+    <string name="homebutton">TODO</string>
+    <string name="PontoIntLogo">TODO</string>
 </resources>
