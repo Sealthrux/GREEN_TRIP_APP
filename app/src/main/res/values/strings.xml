@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MY GREEN TRIP</string>
     <string name="pontos_de_interesse">Pontos de Interesse</string>
+    <string name="todo">TODO</string>
+    <string name="my_green_trip">My Green Trip</string>
+    <string name="restaura_o">Restauração</string>
+    <string name="h_teis">Hóteis</string>
 </resources>

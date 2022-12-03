@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Pontos_Interesse_Main">
 
+    <com.google.android.material.chip.Chip
+        android:id="@+id/ChipHoteis"
+        android:layout_width="97dp"
+        android:layout_height="49dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/h_teis"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/hoteis"
+        app:chipIconSize="16dp"
+        app:rippleColor="#FFFFFF"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="207dp" />
+
     <TextView
         android:id="@+id/PontosDeInteresse"
         android:layout_width="wrap_content"
@@ -44,7 +59,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/topbargreen"
         tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/MyGreenTripTitle"
@@ -52,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:fontFamily="@font/montserrat_bold_italic"
-        android:text="My Green Trip"
+        android:text="@string/my_green_trip"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/TopBarButton"
@@ -68,7 +83,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#00FFFFFF"
-        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="@+id/TopBarButton"
         app:layout_constraintEnd_toEndOf="@+id/TopBarButton"
         app:layout_constraintTop_toTopOf="parent"
@@ -81,26 +95,29 @@
         android:layout_width="350sp"
         android:layout_height="205sp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="204dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/filtrosbox"
-        android:elevation="6dp"
+        android:elevation="1dp"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.chip.Chip
-        android:id="@+id/HoteisChip"
-        style="@style/Widget.MaterialComponents.Chip.Entry"
-        android:layout_width="120dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#00FFFFFF"
-        android:elevation="7dp"
-        android:text="Hotéis"
-        android:textColor="#000000"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="204dp" />
+        android:id="@+id/ChipRest"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/restaura_o"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/restauracao"
+        app:chipIconSize="16dp"
+        app:rippleColor="#FFFFFF"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="207dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
