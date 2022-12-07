@@ -84,7 +84,7 @@
         android:layout_height="49dp"
         android:layout_marginTop="211dp"
         android:elevation="4dp"
-        android:fontFamily="sans-serif-thin"
+        android:fontFamily="@font/montserrat_light"
         android:text="@string/natureza"
         android:textSize="14sp"
         android:typeface="normal"
