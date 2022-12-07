@@ -13,6 +13,13 @@
         android:theme="@style/Theme.MYGREENTRIP"
         tools:targetApi="31">
         <activity
+            android:name=".Ponto_interesse_singularPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Pontos_Interesse_Main"
             android:exported="false">
             <meta-data
