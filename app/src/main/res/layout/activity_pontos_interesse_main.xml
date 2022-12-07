@@ -9,12 +9,31 @@
     tools:layout_editor_absoluteX="135dp"
     tools:layout_editor_absoluteY="1dp">
 
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipHoteis"
+        android:layout_width="97dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="140dp"
+        android:checkable="true"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/h_teis"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/hoteis"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF" />
+
     <TextView
         android:id="@+id/FiltrosBoxSelector"
         android:layout_width="344dp"
         android:layout_height="250dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="184dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/filtrosbox"
         android:elevation="3dp"
@@ -28,7 +47,7 @@
         android:id="@+id/chipCultura"
         android:layout_width="124dp"
         android:layout_height="47dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="320dp"
         android:elevation="4dp"
         android:fontFamily="@font/montserrat_light"
         android:text="@string/cultura"
@@ -40,13 +59,14 @@
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
-        app:rippleColor="#FFFFFF" />
+        app:rippleColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <com.google.android.material.chip.Chip
         android:id="@+id/chipTransporte"
         android:layout_width="124dp"
         android:layout_height="47dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="264dp"
         android:elevation="4dp"
         android:fontFamily="@font/montserrat_light"
         android:text="@string/transporte"
@@ -58,31 +78,14 @@
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
-        app:rippleColor="#FFFFFF" />
-
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chipDesporto"
-        android:layout_width="124dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="276dp"
-        android:elevation="4dp"
-        android:fontFamily="@font/montserrat_light"
-        android:text="@string/desporto"
-        android:textSize="14sp"
-        android:typeface="normal"
-        app:chipIcon="@drawable/desporto"
-        app:chipIconSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
-        app:rippleColor="#FFFFFF" />
+        app:rippleColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <com.google.android.material.chip.Chip
         android:id="@+id/chipNatureza"
         android:layout_width="97dp"
         android:layout_height="49dp"
-        android:layout_marginTop="211dp"
+        android:layout_marginTop="200dp"
         android:elevation="4dp"
         android:fontFamily="@font/montserrat_light"
         android:text="@string/natureza"
@@ -97,10 +100,46 @@
         app:rippleColor="#FFFFFF" />
 
     <com.google.android.material.chip.Chip
+        android:id="@+id/chipDesporto"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="264dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/desporto"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:chipIcon="@drawable/desporto"
+        app:chipIconSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
+        app:rippleColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/pontosProximos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="105dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/pontos_pr_ximos"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <com.google.android.material.chip.Chip
         android:id="@+id/chipMuseus"
         android:layout_width="124dp"
         android:layout_height="47dp"
-        android:layout_marginTop="213dp"
+        android:layout_marginTop="200dp"
         android:elevation="4dp"
         android:fontFamily="@font/montserrat_light"
         android:text="@string/museus"
@@ -112,25 +151,27 @@
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
-        app:rippleColor="#FFFFFF" />
+        app:rippleColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <com.google.android.material.chip.Chip
-        android:id="@+id/ChipHoteis"
-        android:layout_width="97dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="152dp"
+        android:id="@+id/chipRest"
+        android:layout_width="124dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="140dp"
         android:elevation="4dp"
-        android:fontFamily="sans-serif-thin"
-        android:text="@string/h_teis"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/restaura_o"
         android:textSize="14sp"
         android:typeface="normal"
-        app:chipIcon="@drawable/hoteis"
+        app:chipIcon="@drawable/restauracao"
         app:chipIconSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
-        app:rippleColor="#FFFFFF" />
+        app:rippleColor="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/PontosDeInteresse"
@@ -203,23 +244,30 @@
         app:srcCompat="@drawable/homebutton"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/ChipRest"
-        android:layout_width="124dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="152dp"
-        android:elevation="4dp"
-        android:fontFamily="@font/montserrat_light"
-        android:text="@string/restaura_o"
-        android:textSize="14sp"
-        android:typeface="normal"
-        app:chipIcon="@drawable/restauracao"
-        app:chipIconSize="16dp"
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopBarButton"
-        app:rippleColor="#FFFFFF" />
+        app:layout_constraintTop_toBottomOf="@+id/pontosProximos"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="733dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
