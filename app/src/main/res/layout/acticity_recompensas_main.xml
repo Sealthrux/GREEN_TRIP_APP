@@ -70,4 +70,39 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/homebutton"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/recompenas2"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:text="Troque pontos para receber este Voucher"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449"
+        tools:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/recompensas1"
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:background="@drawable/canto_arredondado"
+        android:elevation="20dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="2 Cafés no Academia"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309"
+        tools:fontFamily="@font/montserrat_bold" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
