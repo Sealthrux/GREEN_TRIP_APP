@@ -9,7 +9,7 @@
         android:id="@+id/recompensas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="105dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/recompensas"
@@ -72,23 +72,8 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/recompenas2"
-        android:layout_width="340dp"
-        android:layout_height="75dp"
-        android:text="Troque pontos para receber este Voucher"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449"
-        tools:fontFamily="@font/montserrat_light" />
-
-    <TextView
         android:id="@+id/recompensas1"
-        android:layout_width="340dp"
+        android:layout_width="370dp"
         android:layout_height="75dp"
         android:background="@drawable/canto_arredondado"
         android:elevation="20dp"
@@ -96,13 +81,61 @@
         android:padding="10dp"
         android:text="2 Cafés no Academia"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309"
+        app:layout_constraintVertical_bias="0.304"
         tools:fontFamily="@font/montserrat_bold" />
+
+    <TextView
+        android:id="@+id/recompenas2"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:elevation="21dp"
+        android:padding="10dp"
+        android:text="Troque pontos para receber este Voucher"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329"
+        tools:fontFamily="@font/montserrat_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="#53934e"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        android:fontFamily="@font/montserrat_medium"/>
+
+    <EditText
+        android:id="@+id/recompensas3"
+        android:layout_width="368dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Recompensas Disponíveis"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.380"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
