@@ -6,6 +6,6 @@ import android.os.Bundle
 class Recompensas_Main : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.acticity_recompensas_main)
+        setContentView(R.layout.activity_recompensas_main)
     }
 }
