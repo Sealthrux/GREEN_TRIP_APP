@@ -90,11 +90,79 @@
         android:fontFamily="@font/montserrat_bold"
         android:text="Carlos Rodrigo"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_photo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="25dp"
+        app:contentPadding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        app:layout_constraintVertical_bias="0.108"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Os seus dados:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Nome:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Telefone:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Email:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Palavra-passe:"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
