@@ -6,13 +6,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/reservas"
+        android:id="@+id/perfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="105dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Reservas"
+        android:text="Perfil"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,6 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pontosdeinteresseICON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/PontoIntLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toEndOf="@+id/perfil"
+        app:layout_constraintTop_toTopOf="@+id/perfil"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pontosinteresseexeimg" />
 
     <ImageButton
         android:id="@+id/topBarButton"
@@ -73,10 +86,11 @@
         android:id="@+id/profile_photo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="132dp"
         android:padding="5dp"
         android:src="@drawable/action_hero"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBarButton"
         app:shapeAppearanceOverlay="@style/Circular"
@@ -87,10 +101,11 @@
         android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="Carlos Rodrigo"
         android:textColor="#000000"
-        android:textSize="22sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,12 +120,13 @@
         app:contentPadding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_name"
-        app:layout_constraintVertical_bias="0.108"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintVertical_bias="0.275"
+        tools:layout_editor_absoluteX="20dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:backgroundTint="#53904F"
             android:orientation="vertical">
 
             <TextView
@@ -120,7 +136,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:text="Os seus dados:"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/nome"
@@ -161,7 +177,18 @@
                 android:fontFamily="@font/montserrat_medium"
                 android:text="Palavra-passe:"
                 android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FF53904F"
+                android:text="Alterar dados" />
         </LinearLayout>
+
+
+
     </androidx.cardview.widget.CardView>
 
 
