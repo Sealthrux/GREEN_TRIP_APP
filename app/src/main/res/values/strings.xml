@@ -17,4 +17,11 @@
     <string name="homebutton">TODO</string>
     <string name="PontoIntLogo">TODO</string>
     <string name="pontos_pr_ximos">Pontos Próximos</string>
-</resources>
+    <string name="iniciocomecar">Começar</string>
+    <string name="termostitulo">Termos de Usabilidade</string>
+    <string name="termostexto">Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah
+    </string>
+    <string name="termosaceito">Aceito</string>
+    <string name="iniciologin">Login</string>
+    <string name="iniciocriarconta">Criar Conta</string>
+    </resources>
