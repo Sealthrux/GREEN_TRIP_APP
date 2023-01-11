@@ -24,4 +24,7 @@
     <string name="termosaceito">Aceito</string>
     <string name="iniciologin">Login</string>
     <string name="iniciocriarconta">Criar Conta</string>
-    </resources>
+    <string name="pontointeresseinfotext">Text normal placeholder</string>
+    <string name="Titulopontointeressetext">Titulo Ponto Interesse Placeholder</string>
+    <string name="thumbnailpontointeresse">ThumbnailPontoInteresse</string>
+</resources>
