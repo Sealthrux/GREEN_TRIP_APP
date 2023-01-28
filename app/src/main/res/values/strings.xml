@@ -26,5 +26,7 @@
     <string name="iniciocriarconta">Criar Conta</string>
     <string name="pontointeresseinfotext">Text normal placeholder</string>
     <string name="Titulopontointeressetext">Titulo Ponto Interesse Placeholder</string>
+    <string name="DigiCodigoQR">Digitalize o Codigo QR</string>
+    <string name="DigiQRText">Receba 10 pontos </string>
     <string name="thumbnailpontointeresse">ThumbnailPontoInteresse</string>
 </resources>
