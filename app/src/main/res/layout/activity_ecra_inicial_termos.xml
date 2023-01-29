@@ -28,34 +28,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/Logo" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="564dp"
-        android:layout_height="812dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/termos_darkbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Teste" />
+        app:layout_constraintVertical_bias="0.777">
+    </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="482dp"
-        android:layout_height="731dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="36dp"
+        android:background="@drawable/termos_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Whitebg" />
+        app:layout_constraintVertical_bias="0.777">
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/termostitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="@string/termostitulo"
-        android:textColor="#6E798C"
+        android:textColor="@color/gray"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,10 +68,15 @@
 
     <TextView
         android:id="@+id/termostexto"
-        android:layout_width="298dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="325dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/termos_bg"
         android:fontFamily="@font/montserrat"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:text="@string/termostexto"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -78,14 +88,16 @@
         android:id="@+id/termosaceito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#FEFEFE"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/termosaceito"
-        android:textColor="#52914E"
-        android:textSize="16sp"
+        android:textColor="@color/green"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/lightgray"
+        app:strokeWidth="0.5dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

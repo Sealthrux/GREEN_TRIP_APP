@@ -19,7 +19,7 @@
     <string name="pontos_pr_ximos">Pontos Próximos</string>
     <string name="iniciocomecar">Começar</string>
     <string name="termostitulo">Termos de Usabilidade</string>
-    <string name="termostexto">Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah
+    <string name="termostexto">Ao usar esta aplicação, concorda ter idade superior a 13 anos.
     </string>
     <string name="termosaceito">Aceito</string>
     <string name="iniciologin">Login</string>
@@ -27,4 +27,26 @@
     <string name="pontointeresseinfotext">Text normal placeholder</string>
     <string name="Titulopontointeressetext">Titulo Ponto Interesse Placeholder</string>
     <string name="thumbnailpontointeresse">ThumbnailPontoInteresse</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="nome">Nome</string>
+    <string name="regiao">Região</string>
+    <string name="perdeupassword">Perdeu a password?</string>
+    <string name="recexp">Introduza o seu email de recuperação</string>
+    <string name="reccod">Introduza o código enviado para o seu email</string>
+    <string name="recpass">Introduza a nova password</string>
+    <string name="recuperar">Recuperar</string>
+    <string name="codigorec">Código de recuperação</string>
+    <string name="novapassword">Nova Password</string>
+    <string name="PontosInteresse">Pontos de Interesse</string>
+    <string name="PontosInteresseInfo">Encontra pontos de Interesse proximos, efetua reservas para futuras visitas, e resgata pontos ao visitar estes lugares.</string>
+    <string name="Recompensas">Recompensas</string>
+    <string name="RecompensasInfo">Troque os seus pontos por vouchers.</string>
+    <string name="PontoseVouchers">Pontos e Vouchers</string>
+    <string name="PontoseVouchersInfo">Visualize os pontos e vouchers disponiveis. Troque os seus pontos por vouchers.</string>
+    <string name="Reservas">Reservas</string>
+    <string name="ReservasInfo">Visualize os dados das reservas ativas. Pode aceder a reservas canceladas e cancelar as ativas.</string>
+    <string name="Perfil">Perfil</string>
+    <string name="PerfilInfo">Modifique os seus dados pessoais e encontre estatisticas sobre a sua campanha na app.</string>
+
 </resources>

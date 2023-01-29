@@ -3,17 +3,19 @@ package com.example.mygreentrip
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.TextView
 
-class Ecra_Inicial : AppCompatActivity() {
+class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ecra_inicial)
+        setContentView(R.layout.activity_login)
 
-        val buttonClick = findViewById<Button>(R.id.login)
+        val tv = findViewById<View>(R.id.l_perdeupass) as TextView
 
-        buttonClick.setOnClickListener {
-            val intent = Intent(this, Ecra_Inicial_Termos::class.java)
+        tv.setOnClickListener{
+            val intent = Intent(this, Recuperar_pass_email::class.java)
             startActivity(intent)
         }
     }

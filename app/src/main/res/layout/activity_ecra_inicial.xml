@@ -29,11 +29,11 @@
         app:srcCompat="@drawable/Logo" />
 
     <Button
-        android:id="@+id/comecar"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:backgroundTint="#52914E"
+        android:backgroundTint="@color/green"
         android:fontFamily="@font/montserrat_medium"
         android:paddingLeft="26dp"
         android:paddingTop="18dp"
