@@ -67,4 +67,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:strokeColor="@color/lightgray"
         app:strokeWidth="0.5dp" />
+
+    <TextView
+        android:id="@+id/explorar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:fontFamily="@font/montserrat_medium"
+        android:minHeight="48dp"
+        android:text="@string/Explorar"
+        android:textColor="@color/green"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/criarconta" />
 </androidx.constraintlayout.widget.ConstraintLayout>

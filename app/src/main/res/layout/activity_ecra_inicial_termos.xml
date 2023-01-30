@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="#FEFEFE"
+        android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/termosaceito"
         android:textColor="@color/green"

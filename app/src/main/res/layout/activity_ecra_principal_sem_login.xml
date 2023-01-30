@@ -4,7 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ecra_principal">
+    tools:context=".Ecra_Principal_SemLogin"
+    android:background="@drawable/termos_darkbg">
+
+    <RelativeLayout
+        android:id="@+id/avisologin"
+        android:layout_width="339dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/aviso_bg"
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBarButton2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:text="@string/avisologin"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="46dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/avisologin2"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/ok1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:minHeight="48dp"
+            android:text="@string/ok"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
 
     <ImageButton
         android:id="@+id/topBarButton2"
@@ -50,103 +98,22 @@
         android:id="@+id/login_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:background="@drawable/textborder"
         android:fontFamily="@font/montserrat_light"
-        android:text="0pts"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:paddingTop="16dp"
+        android:textAlignment="center"
+        android:text="@string/iniciologin"
         android:textColor="@color/white"
         android:textSize="12dp"
         app:layout_constraintEnd_toStartOf="@+id/homeButtonTop"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
-        android:id="@+id/PontosInteresse"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@color/white"
-        android:elevation="10dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBarButton2">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/PontosInteresse"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="@string/PontosInteresseInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
-
-        <ImageView
-            android:id="@+id/circle1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/PontosVouchers"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@color/white"
-        android:elevation="10dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recompensas">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/PontoseVouchers"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="@string/PontoseVouchersInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
-
-        <ImageView
-            android:id="@+id/circle3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/Recompensas"
@@ -155,9 +122,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
-        android:background="@color/white"
+        android:background="@drawable/card_bg"
         android:elevation="10dp"
-        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -190,7 +156,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="280dp"
             android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
+            app:srcCompat="@drawable/darkgreen_circle" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -200,13 +166,12 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
-        android:background="@color/white"
         android:elevation="10dp"
-        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PontosVouchers">
+        app:layout_constraintTop_toBottomOf="@+id/PontosVouchers"
+        android:background="@drawable/termos_darkbg">
 
         <TextView
             android:layout_width="match_parent"
@@ -235,7 +200,94 @@
             android:layout_height="40dp"
             android:layout_marginStart="280dp"
             android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
+            app:srcCompat="@drawable/dark_circle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PontosInteresse"
+        android:layout_width="339dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBarButton2"
+        android:background="@drawable/card_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/PontosInteresse"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="46dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/PontosInteresseInfo"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/darkgreen_circle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PontosVouchers"
+        android:layout_width="339dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recompensas"
+        android:background="@drawable/termos_darkbg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/PontoseVouchers"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="46dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/PontoseVouchersInfo"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/circle3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/dark_circle" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -245,13 +297,12 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
-        android:background="@color/white"
-        android:clickable="true"
         android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Reservas">
+        app:layout_constraintTop_toBottomOf="@+id/Reservas"
+        android:background="@drawable/card_bg">
 
         <TextView
             android:layout_width="match_parent"
@@ -280,7 +331,8 @@
             android:layout_height="40dp"
             android:layout_marginStart="280dp"
             android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
+            app:srcCompat="@drawable/darkgreen_circle" />
     </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

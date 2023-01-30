@@ -50,5 +50,8 @@
     <string name="ReservasInfo">Visualize os dados das reservas ativas. Pode aceder a reservas canceladas e cancelar as ativas.</string>
     <string name="Perfil">Perfil</string>
     <string name="PerfilInfo">Modifique os seus dados pessoais e encontre estatisticas sobre a sua campanha na app.</string>
-
+    <string name="Explorar">Só quero explorar a aplicação</string>
+    <string name="avisologin">Para ter acesso a todos os menus</string>
+    <string name="avisologin2">Efetue o login</string>
+    <string name="ok">Ok</string>
 </resources>
