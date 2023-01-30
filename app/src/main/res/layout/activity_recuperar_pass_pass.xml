@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="119dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="119dp"
+        android:layout_marginEnd="118dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_medium"
         android:paddingLeft="36dp"
@@ -23,7 +23,6 @@
         android:textColor="@color/green"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rec_pass_1"
         app:strokeColor="@color/lightgray"
@@ -39,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Logo" />
+        app:srcCompat="@drawable/logo1" />
 
     <TextView
         android:id="@+id/textView5"

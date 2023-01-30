@@ -16,21 +16,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Logo" />
+        app:srcCompat="@drawable/logo1" />
 
     <TextView
         android:id="@+id/email_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="309dp"
+        android:layout_marginEnd="308dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="@string/email"
         android:textColor="@color/green"
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recexp" />
 

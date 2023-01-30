@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.Button
 
 class Ecra_Inicial_Termos : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ecra_inicial_termos)

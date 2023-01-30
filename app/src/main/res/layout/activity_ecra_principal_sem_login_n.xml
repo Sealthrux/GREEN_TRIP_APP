@@ -6,288 +6,293 @@
     android:layout_height="match_parent"
     tools:context=".Ecra_Principal_SemLogin">
 
-    <ImageButton
-        android:id="@+id/topBarButton2"
-        style="@android:style/Widget.Holo.ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/topbargreen"
-        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
-
-    <TextView
-        android:id="@+id/myGreenTripTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="@string/my_green_trip"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/homeButtonTop"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/homebutton"
-        app:layout_constraintEnd_toEndOf="@+id/topBarButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homebutton"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/login_in"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
-        android:clickable="true"
-        android:background="@drawable/textborder"
-        android:fontFamily="@font/montserrat_light"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:paddingTop="16dp"
-        android:textAlignment="center"
-        android:text="@string/iniciologin"
-        android:textColor="@color/white"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/homeButtonTop"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
     <RelativeLayout
-        android:id="@+id/Recompensas"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@color/white"
-        android:elevation="10dp"
-        android:clickable="true"
+        android:id="@+id/Bar"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PontosInteresse">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Recompensas"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="@string/RecompensasInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/circle2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/Reservas"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:elevation="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PontosVouchers"
-        android:background="@drawable/card_bg">
+            android:id="@+id/imageView8"
+            android:layout_width="412dp"
+            android:layout_height="57dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_rectangle" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/myGreenTripTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Reservas"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:text="@string/my_green_trip"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/homeButtonTop"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="352dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/homebutton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/homebutton"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
+            android:id="@+id/login_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/textborder"
+            android:clickable="true"
             android:fontFamily="@font/montserrat_light"
-            android:text="@string/ReservasInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
-
-        <ImageView
-            android:id="@+id/circle4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/gray_circle" />
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:paddingTop="16dp"
+            android:text="@string/iniciologin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/homeButtonTop"
+            app:layout_constraintTop_toTopOf="parent" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/PontosInteresse"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:elevation="10dp"
-        android:clickable="true"
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="672dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBarButton2"
-        android:background="@color/white">
+        app:layout_constraintTop_toBottomOf="@+id/Bar"
+        android:outlineAmbientShadowColor="@color/white"
+        >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/PontosInteresse"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="@string/PontosInteresseInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
+            <RelativeLayout
+                android:id="@+id/PontosInteresse"
+                android:layout_width="339dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp">
 
-        <ImageView
-            android:id="@+id/circle1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
-    </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/PontosInteresse"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
 
-    <RelativeLayout
-        android:id="@+id/PontosVouchers"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:elevation="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recompensas"
-        android:background="@drawable/card_bg">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/PontosInteresseInfo"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/PontoseVouchers"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+                <ImageView
+                    android:id="@+id/circle1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/green_circle" />
+            </RelativeLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="@string/PontoseVouchersInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
+            <RelativeLayout
+                android:id="@+id/Recompensas"
+                android:layout_width="339dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp">
 
-        <ImageView
-            android:id="@+id/circle3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/gray_circle" />
-    </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/Recompensas"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
 
-    <RelativeLayout
-        android:id="@+id/Perfil"
-        android:layout_width="339dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:elevation="10dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Reservas"
-        android:background="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/RecompensasInfo"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="@string/Perfil"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+                <ImageView
+                    android:id="@+id/circle2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/green_circle" />
+            </RelativeLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:layout_marginEnd="46dp"
-            android:fontFamily="@font/montserrat_light"
-            android:text="@string/PerfilInfo"
-            android:textColor="@color/black"
-            android:textSize="13dp" />
+            <RelativeLayout
+                android:id="@+id/Reservas"
+                android:layout_width="339dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/card_bg"
+                android:elevation="10dp">
 
-        <ImageView
-            android:id="@+id/circle5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="8dp"
-            app:srcCompat="@drawable/green_circle" />
-    </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/PontoseVouchers"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/PontoseVouchersInfo"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/circle4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/gray_circle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/PontosVouchers"
+                android:layout_width="339dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/card_bg"
+                android:elevation="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/Reservas"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/ReservasInfo"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/circle3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/gray_circle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Perfil"
+                android:layout_width="339dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:layout_marginBottom="36dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/Perfil"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/PerfilInfo"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/circle5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/green_circle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
