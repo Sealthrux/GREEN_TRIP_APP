@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.306"
-        app:srcCompat="@drawable/Footsteps" />
+        app:srcCompat="@drawable/footsteps1" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Logo" />
+        app:srcCompat="@drawable/logo1" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -41,6 +41,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="36dp"
@@ -50,8 +51,7 @@
         app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777">
-    </RelativeLayout>
+        app:layout_constraintVertical_bias="0.777"></RelativeLayout>
 
     <TextView
         android:id="@+id/termostitulo"
@@ -74,14 +74,14 @@
         android:background="@drawable/termos_bg"
         android:fontFamily="@font/montserrat"
         android:paddingLeft="14dp"
-        android:paddingRight="14dp"
         android:paddingTop="8dp"
+        android:paddingRight="14dp"
         android:paddingBottom="8dp"
         android:text="@string/termostexto"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
         app:layout_constraintTop_toBottomOf="@+id/termostitulo" />
 
     <Button

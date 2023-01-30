@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.306"
-        app:srcCompat="@drawable/Footsteps" />
+        app:srcCompat="@drawable/footsteps1" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Logo" />
+        app:srcCompat="@drawable/logo1" />
 
     <Button
         android:id="@+id/login"
@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_medium"
         android:paddingLeft="48dp"
@@ -43,6 +44,7 @@
         android:text="@string/iniciologin"
         android:textColor="@color/green"
         android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/criarconta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:strokeColor="@color/lightgray"
@@ -52,6 +54,7 @@
         android:id="@+id/criarconta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="44dp"
         android:backgroundTint="@color/white"
@@ -64,6 +67,7 @@
         android:textColor="@color/green"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/login"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:strokeColor="@color/lightgray"
         app:strokeWidth="0.5dp" />

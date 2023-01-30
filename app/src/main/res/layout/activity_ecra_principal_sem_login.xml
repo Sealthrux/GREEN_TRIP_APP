@@ -7,6 +7,61 @@
     tools:context=".Ecra_Principal_SemLogin"
     android:background="@drawable/termos_darkbg">
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/green_rectangle" />
+
+    <TextView
+        android:id="@+id/myGreenTripTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/my_green_trip"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/homeButtonTop"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/homebutton"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homebutton"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/login_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:background="@drawable/textborder"
+        android:fontFamily="@font/montserrat_light"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:paddingTop="16dp"
+        android:textAlignment="center"
+        android:text="@string/iniciologin"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/homeButtonTop"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <RelativeLayout
         android:id="@+id/avisologin"
         android:layout_width="339dp"
@@ -18,7 +73,7 @@
         android:translationZ="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBarButton2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView8">
 
         <TextView
             android:layout_width="match_parent"
@@ -53,67 +108,6 @@
             android:textSize="14sp" />
 
     </RelativeLayout>
-
-    <ImageButton
-        android:id="@+id/topBarButton2"
-        style="@android:style/Widget.Holo.ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/topbargreen"
-        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
-
-    <TextView
-        android:id="@+id/myGreenTripTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="@string/my_green_trip"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/homeButtonTop"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/homebutton"
-        app:layout_constraintEnd_toEndOf="@+id/topBarButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homebutton"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/login_in"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
-        android:clickable="true"
-        android:background="@drawable/textborder"
-        android:fontFamily="@font/montserrat_light"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:paddingTop="16dp"
-        android:textAlignment="center"
-        android:text="@string/iniciologin"
-        android:textColor="@color/white"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/homeButtonTop"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <RelativeLayout
         android:id="@+id/Recompensas"
@@ -213,7 +207,7 @@
         android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBarButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
         android:background="@drawable/card_bg">
 
         <TextView
