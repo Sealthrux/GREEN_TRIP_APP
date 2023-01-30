@@ -29,6 +29,7 @@
     <string name="DigiCodigoQR">Digitalize o Codigo QR</string>
     <string name="DigiQRText">Receba 10 pontos </string>
     <string name="thumbnailpontointeresse">ThumbnailPontoInteresse</string>
+<<<<<<< Updated upstream
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="nome">Nome</string>
@@ -54,4 +55,9 @@
     <string name="avisologin">Para ter acesso a todos os menus</string>
     <string name="avisologin2">Efetue o login</string>
     <string name="ok">Ok</string>
+=======
+    <string name="heroimage">HeroImage</string>
+    <string name="qrcodeicon">QRCodeIcon</string>
+    <string name="gobackarrow">GoBackArrow</string>
+>>>>>>> Stashed changes
 </resources>
