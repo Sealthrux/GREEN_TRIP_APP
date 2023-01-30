@@ -5,22 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/BackArrow"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="108dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/AlterarPerfil"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBarButton"
+        app:srcCompat="@drawable/backarrow_preta" />
+
     <TextView
-        android:id="@+id/perfil"
+        android:id="@+id/AlterarPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="105dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Perfil"
+        android:text="Alterar Perfil"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+       />
+
 
     <ImageView
         android:id="@+id/pontosdeinteresseICON"
@@ -29,9 +44,9 @@
         android:contentDescription="@string/PontoIntLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toEndOf="@+id/perfil"
-        app:layout_constraintTop_toTopOf="@+id/perfil"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/AlterarPerfil"
+        app:layout_constraintTop_toTopOf="@+id/AlterarPerfil"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/pontosinteresseexeimg" />
 
@@ -86,11 +101,11 @@
         android:id="@+id/profile_photo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="128dp"
         android:padding="5dp"
         android:src="@drawable/action_hero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBarButton"
         app:shapeAppearanceOverlay="@style/Circular"
@@ -120,7 +135,7 @@
         app:contentPadding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_name"
-        app:layout_constraintVertical_bias="0.275"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="20dp">
 
         <LinearLayout
@@ -145,8 +160,18 @@
 
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Nome:"
+                android:text="Nome"
+                android:textColor="#000000"
                 android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="Carlos Rodrigo">
+
+            </EditText>
 
             <TextView
                 android:id="@+id/PontoInteresseInfo"
@@ -155,8 +180,18 @@
 
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Telefone:"
+                android:text="Telefone"
+                android:textColor="#000000"
                 android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="967 543 267">
+
+            </EditText>
 
             <TextView
                 android:id="@+id/email"
@@ -165,8 +200,18 @@
 
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Email:"
+                android:text="Email"
+                android:textColor="#000000"
                 android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="carlos.rodri87@gmail.com">
+
+            </EditText>
 
             <TextView
                 android:id="@+id/password"
@@ -178,6 +223,15 @@
                 android:text="Palavra-passe:"
                 android:textSize="16sp" />
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="">
+
+            </EditText>
+
             <Button
                 android:id="@+id/btnAlterar"
                 android:layout_width="wrap_content"
@@ -185,10 +239,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#FF53904F"
-                android:text="Alterar dados"
-                android:textSize="13sp"/>
+                android:text="Guardar dados"
+                android:textSize="13sp" />
         </LinearLayout>
-
 
 
     </androidx.cardview.widget.CardView>
